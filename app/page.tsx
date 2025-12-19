@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { personalInfo } from "@/data/portfolio";
 
 export default function Home() {
@@ -8,6 +9,21 @@ export default function Home() {
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
+            {/* Profile Image */}
+            {personalInfo.profileImage && (
+              <div className="mb-8 flex justify-center">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-blue-600 dark:border-blue-400 shadow-xl">
+                  <Image
+                    src={personalInfo.profileImage}
+                    alt={personalInfo.name}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            )}
+
             {/* Greeting */}
             <div className="mb-6">
               <span className="inline-block px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium">
@@ -70,7 +86,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                4+
+                10+
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Projects Completed
@@ -78,7 +94,7 @@ export default function Home() {
             </div>
             <div className="text-center p-6">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                3+
+                2+
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Years Experience
@@ -86,7 +102,7 @@ export default function Home() {
             </div>
             <div className="text-center p-6">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                10+
+                8+
               </div>
               <div className="text-gray-600 dark:text-gray-400">
                 Technologies Used

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { personalInfo } from "@/data/portfolio";
 
 export default function AboutPage() {
@@ -11,6 +12,21 @@ export default function AboutPage() {
           </h1>
           <div className="w-20 h-1 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
         </div>
+
+        {/* Profile Section */}
+        {personalInfo.profileImage && (
+          <div className="flex justify-center mb-12">
+            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-blue-600 dark:border-blue-400 shadow-2xl">
+              <Image
+                src={personalInfo.profileImage}
+                alt={personalInfo.name}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+        )}
 
         {/* Introduction */}
         <div className="mb-16">

@@ -6,6 +6,7 @@ export const personalInfo = {
   headline: "Information Systems Student | Software Engineer Enthusiast",
   description:
     "Information Systems student passionate about fullstack web development and building scalable web applications.",
+    profileImage: "https://drive.google.com/uc?export=view&id=1vvqkqV77wpJ-ZB1qbiZu7YZRgOMJD1ja",
   about: {
     introduction:
       "I am someone who is deeply passionate about the world of web programming. I enjoy the process of creating applications and digital solutions that can bring real value. My interests include frontend and backend development, as well as exploring the latest technologies to build efficient, interactive, and responsive websites.",
