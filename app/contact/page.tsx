@@ -185,7 +185,11 @@ export default function ContactPage() {
               Send a Message via WhatsApp
             </h2>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+              suppressHydrationWarning
+            >
               {/* Name */}
               <div>
                 <label
@@ -203,6 +207,7 @@ export default function ContactPage() {
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-600 focus:border-transparent outline-none transition-colors"
                   placeholder="Your name"
+                  suppressHydrationWarning
                 />
               </div>
 
@@ -223,6 +228,7 @@ export default function ContactPage() {
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-600 focus:border-transparent outline-none transition-colors resize-none"
                   placeholder="Your message..."
+                  suppressHydrationWarning
                 />
               </div>
 
