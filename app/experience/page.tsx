@@ -11,6 +11,8 @@ const typeColors = {
     "bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300",
   course:
     "bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300",
+  "study independent":
+    "bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300",
 };
 
 const typeLabels = {
@@ -19,6 +21,7 @@ const typeLabels = {
   freelance: "Freelance",
   project: "Project",
   course: "Course",
+  "study independent": "Study Independent",
 };
 
 export default function ExperiencePage() {
