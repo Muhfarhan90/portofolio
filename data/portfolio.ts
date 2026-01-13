@@ -160,6 +160,29 @@ export const projectsData: Project[] = [
     image:
       "https://drive.google.com/uc?export=view&id=1fewzF01K2-jbjlELnuVv9yMeOLVUe5XV",
   },
+  {
+    id: "9",
+    title: "Wedding App Management System",
+    description:
+      "A web application that facilitates the management of wedding events, including orders, invoices, and event schedules.",
+    techStack: ["Laravel", "MySQL", "Tailwind CSS"],
+    // demoLink: "https://quran-web-coral.vercel.app",
+    repoLink: "https://github.com/muhfarhan90/roroo-wedding",
+    image:
+      "https://drive.google.com/uc?export=view&id=1oMJdytbeA5G1pzxwLqjSjBHhApAQPrLT",
+  },
+  {
+    id: "10",
+    title:
+      "Support Decision System for Project Management Software Selection (SAW Method)",
+    description:
+      "A decision support system that assists in selecting project management software using the Simple Additive Weighting (SAW) method.",
+    techStack: ["Next.js", "PostgreSQL", "Tailwind CSS"],
+    demoLink: "https://spk-ahp-saw.vercel.app",
+    repoLink: "https://github.com/muhfarhan90/spk-ahp-saw",
+    image:
+      "https://drive.google.com/uc?export=view&id=1nhqocKlTj4VJCsYMSh6NrFOn2o3S-adb",
+  },
 ];
 
 // Experience Data
